@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xIR-yM-9Aw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create-->
+        <scene sceneID="92D-h5-5uS">
+            <objects>
+                <viewController id="63b-eI-ShS" customClass="ViewController" customModule="T_idioms" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="h7L-YV-sma">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="This is where you will create a new T'Idiom" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjQ-he-pTY">
+                                <rect key="frame" x="45" y="94" width="324" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Mms-qk-Wey"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="7"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DN5-iw-Glm">
+                                <rect key="frame" x="45" y="488" width="324" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GdM-Bz-xcG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Create">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <color key="strokeColor" red="0.58431372550000005" green="0.92156862750000001" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
+                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="createTidiom:" destination="63b-eI-ShS" eventType="touchUpInside" id="XaB-fD-NjE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="&quot;tougher than a texas rattlesnake there partner&quot;" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYD-fB-tec">
+                                <rect key="frame" x="35" y="179" width="344" height="279"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" constant="60" id="eXb-go-II2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is where the user will be able to name/save T'idioms" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbc-1f-SF1">
+                                <rect key="frame" x="45" y="563" width="324" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="rJC-pH-Q3w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iVD-Bs-Vwd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gbc-1f-SF1" firstAttribute="leading" secondItem="iVD-Bs-Vwd" secondAttribute="leading" constant="45" id="3RG-m2-VDJ"/>
+                            <constraint firstItem="DN5-iw-Glm" firstAttribute="leading" secondItem="PjQ-he-pTY" secondAttribute="leading" id="4Qj-7a-Y7a"/>
+                            <constraint firstItem="DN5-iw-Glm" firstAttribute="top" secondItem="HYD-fB-tec" secondAttribute="bottom" constant="30" id="8te-VH-4uu"/>
+                            <constraint firstItem="PjQ-he-pTY" firstAttribute="top" secondItem="iVD-Bs-Vwd" secondAttribute="top" constant="50" id="IZh-Tf-vm4"/>
+                            <constraint firstItem="HYD-fB-tec" firstAttribute="leading" secondItem="iVD-Bs-Vwd" secondAttribute="leading" constant="35" id="Ixw-8p-ZDx"/>
+                            <constraint firstItem="DN5-iw-Glm" firstAttribute="trailing" secondItem="PjQ-he-pTY" secondAttribute="trailing" id="JuA-S6-Kqb"/>
+                            <constraint firstItem="iVD-Bs-Vwd" firstAttribute="trailing" secondItem="gbc-1f-SF1" secondAttribute="trailing" constant="45" id="MNd-La-u4L"/>
+                            <constraint firstItem="PjQ-he-pTY" firstAttribute="leading" secondItem="iVD-Bs-Vwd" secondAttribute="leading" constant="45" id="N5e-jc-7NI"/>
+                            <constraint firstItem="HYD-fB-tec" firstAttribute="top" secondItem="PjQ-he-pTY" secondAttribute="bottom" constant="10" id="ThB-OS-Crr"/>
+                            <constraint firstItem="gbc-1f-SF1" firstAttribute="top" secondItem="DN5-iw-Glm" secondAttribute="bottom" constant="25" id="jRj-Db-CCx"/>
+                            <constraint firstItem="iVD-Bs-Vwd" firstAttribute="trailing" secondItem="PjQ-he-pTY" secondAttribute="trailing" constant="45" id="ldr-XQ-6TU"/>
+                            <constraint firstItem="iVD-Bs-Vwd" firstAttribute="trailing" secondItem="HYD-fB-tec" secondAttribute="trailing" constant="35" id="o0i-kU-CBJ"/>
+                            <constraint firstItem="iVD-Bs-Vwd" firstAttribute="bottom" secondItem="gbc-1f-SF1" secondAttribute="bottom" constant="150" id="qbZ-OG-guc"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Create" selectedImage="plus.rectangle.on.folder.fill" catalog="system" id="pG3-Ha-wvS">
+                        <imageReference key="image" image="plus.rectangle.on.folder" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="createdTidiom" destination="HYD-fB-tec" id="WhQ-D0-AgS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P5O-ip-rNF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1976.8115942028987" y="-230.35714285714283"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="log-rq-5kn">
+            <objects>
+                <tabBarController id="xIR-yM-9Aw" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="udR-Ul-I2c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="63b-eI-ShS" kind="relationship" relationship="viewControllers" id="Wip-ZN-uCj"/>
+                        <segue destination="ldh-O1-9YS" kind="relationship" relationship="viewControllers" id="kkI-73-ZWz"/>
+                        <segue destination="Apz-Q6-uU6" kind="relationship" relationship="viewControllers" id="cEs-ph-STu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="taQ-rn-BAq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="686" y="410"/>
+        </scene>
+        <!--Saved-->
+        <scene sceneID="PSR-zy-p2e">
+            <objects>
+                <tableViewController title="Saved" id="qGS-xH-esn" customClass="SavedController" customModule="T_idioms" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="dIj-YB-gTs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="tidiom" rowHeight="90" id="j2f-hU-gfn">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j2f-hU-gfn" id="gNQ-dl-B5l">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yB2-IL-BNh">
+                                            <rect key="frame" x="20" y="11" width="0.0" height="0.0"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="8Ad-ei-YEl" kind="show" id="20K-uD-sPa"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qGS-xH-esn" id="sLi-n5-FEm"/>
+                            <outlet property="delegate" destination="qGS-xH-esn" id="gcS-ca-Db5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Saved T'Idioms" id="J08-5a-EVh"/>
+                    <connections>
+                        <outlet property="savedTableView" destination="dIj-YB-gTs" id="IBH-JC-71R"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fPd-Q2-zVy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2866.666666666667" y="409.82142857142856"/>
+        </scene>
+        <!--DetailView-->
+        <scene sceneID="utd-Bm-etj">
+            <objects>
+                <viewController title="DetailView" id="8Ad-ei-YEl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RgB-Oc-1Z6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is where you can view/share saved T'idioms" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVg-cy-RWW">
+                                <rect key="frame" x="25" y="138" width="364" height="61"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wg1-Dk-umN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wg1-Dk-umN" firstAttribute="trailing" secondItem="yVg-cy-RWW" secondAttribute="trailing" constant="25" id="2b0-iq-WNp"/>
+                            <constraint firstItem="yVg-cy-RWW" firstAttribute="leading" secondItem="Wg1-Dk-umN" secondAttribute="leading" constant="25" id="b1I-FH-C4y"/>
+                            <constraint firstItem="yVg-cy-RWW" firstAttribute="top" secondItem="Wg1-Dk-umN" secondAttribute="top" constant="50" id="lwM-hn-OB0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6Op-cj-gye"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SCD-Vp-7hF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3756.521739130435" y="409.82142857142856"/>
+        </scene>
+        <!--Library-->
+        <scene sceneID="uUJ-Jv-sA0">
+            <objects>
+                <navigationController id="ldh-O1-9YS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Library" selectedImage="books.vertical.fill" catalog="system" id="4pD-Np-8yv">
+                        <imageReference key="image" image="books.vertical" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gRG-e7-rnh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qGS-xH-esn" kind="relationship" relationship="rootViewController" id="hBG-jX-MAd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vab-5U-Puf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1977" y="410"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="qFe-wr-Rt8">
+            <objects>
+                <viewController title="Settings" id="Apz-Q6-uU6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p4A-Rl-zaq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is where users can change settings for creating T'idioms" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="st8-Wd-Z6J">
+                                <rect key="frame" x="45" y="94" width="324" height="92"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" title="oh yeah" translatesAutoresizingMaskIntoConstraints="NO" id="Wep-ME-0aE">
+                                <rect key="frame" x="184" y="351" width="48" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vd8-LF-3GW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="st8-Wd-Z6J" firstAttribute="leading" secondItem="p4A-Rl-zaq" secondAttribute="leadingMargin" constant="25" id="BoO-IG-9yj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="st8-Wd-Z6J" secondAttribute="trailing" constant="25" id="tY3-Kz-0WL"/>
+                            <constraint firstItem="st8-Wd-Z6J" firstAttribute="top" secondItem="vd8-LF-3GW" secondAttribute="top" constant="50" id="xKV-ax-jFF"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape.circle" catalog="system" selectedImage="gearshape.circle.fill" id="9C0-Nc-O3j"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aKk-aj-4SH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1976.8115942028987" y="1073.4375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="books.vertical" catalog="system" width="128" height="107"/>
+        <image name="books.vertical.fill" catalog="system" width="128" height="109"/>
+        <image name="gearshape.circle" catalog="system" width="128" height="121"/>
+        <image name="gearshape.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="plus.rectangle.on.folder" catalog="system" width="128" height="96"/>
+        <image name="plus.rectangle.on.folder.fill" catalog="system" width="128" height="96"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
