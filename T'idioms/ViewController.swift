@@ -16,6 +16,8 @@ class ViewController: UIViewController {
         createdTidiom.text = ""
     }
     
+    let verbs = [""]
+    
     @IBAction func createTidiom(_ sender: Any) {
         createdTidiom.alpha = 0
         createdTidiom.text = "this town ain't big enough for the both of us, partner"
