@@ -7,33 +7,9 @@
 
 import UIKit
 
-class Verb {
-    struct Verbs {
-        let verbList = [
-            "acceleratin'",
-            "achin'",
-            "actin'",
-            "advancin'",
-            "agin'",
-            "aimin'",
-            "answerin'",
-            "apologizin'",
-            "arguin'",
-            "arrivin'",
-            "autographin'",
-            "babblin'",
-            "backin'",
-            "bailin'",
-            "bargainin'",
-            "barterin'",
-            "battin'",
-            "bathin'",
-            "bawlin'",
-            "battlin'",
-            "bein'",
-            "beggin'",
-            "behavin'",
-            "",
-        ]
+class Verb : Codable {
+    var wow : [String]
+    struct Verbs : Codable {
+        var verbList : [String]
     }
 }

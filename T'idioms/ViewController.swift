@@ -10,15 +10,15 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var createdTidiom: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         createdTidiom.text = ""
     }
     
-    let verbs = [""]
     
     @IBAction func createTidiom(_ sender: Any) {
+        NetworkManager().fetchWords()
+        
         createdTidiom.alpha = 0
         createdTidiom.text = "this town ain't big enough for the both of us, partner"
         UIView.animate(withDuration: 1.0, animations: {self.createdTidiom.alpha = 1}, completion: {_ in })
