@@ -16,18 +16,27 @@ class ViewController: UIViewController {
     }
     
     let verbs = Verb().generateVerbs()
+    let adjs = Adj().generateAdjs()
     
     @IBAction func createTidiom(_ sender: Any) {
         //NetworkManager().fetchWords()
         
         createdTidiom.alpha = 0
-        createdTidiom.text = grabRandomWord(list: verbs)
+        let phrase = generateTidiom()
+        createdTidiom.text = phrase
         UIView.animate(withDuration: 1.0, animations: {self.createdTidiom.alpha = 1}, completion: {_ in })
     }
     
     func grabRandomWord(list: [String]) -> String {
         let word = list[Int.random(in: 0..<list.count)]
         return word
+    }
+    
+    func generateTidiom() -> String {
+        var tid = ""
+        tid.append(grabRandomWord(list: verbs) + " ")
+        tid.append(grabRandomWord(list: adjs) + " ")
+        return tid
     }
 /**
  T'idioms is an app that will allow users to generate a "t'idiom", which is short for a "Texas idiom". Many Texans have ridiculous and nearly meaningless idioms which they use within conversations. T'idioms aims to create a service which will allow the rest of us to also have the opportunity to use over-the-top statements in everyday conversation.
