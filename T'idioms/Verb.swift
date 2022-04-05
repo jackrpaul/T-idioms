@@ -7,9 +7,9 @@
 
 import UIKit
 
-class Verb : Codable {
+class Verb {
     var wow : [String]
-    struct Verbs : Codable {
+    struct Verbs {
         var verbList : [String]
     }
 }

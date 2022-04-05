@@ -9,23 +9,34 @@ import Foundation
 
 class NetworkManager {
     func fetchWords() {
-        // Set the URL the request is being made to.
-        let request = URLRequest(url: NSURL(string: "https://random-word-api.herokuapp.com/word?number=10")! as URL)
-        do {
-            // Perform the request
-            var response: AutoreleasingUnsafeMutablePointer<URLResponse?>? = nil
-            let data = try NSURLConnection.sendSynchronousRequest(request, returning: response)
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
 
-            // Convert the data to JSON
-            let jsonSerialized = try JSONSerialization.jsonObject(with: data, options: []) as? [String : Any]
+        let url = URL(string: "https://random-word-api.herokuapp.com/word?number=100")!
+        let task = session.dataTask(with: url) { data, response, error in
 
-            if let json = jsonSerialized, let url = json["url"], let explanation = json["explanation"] {
-                print(url)
-                print(explanation)
+            // ensure there is no error for this HTTP response
+            guard error == nil else {
+                print ("error: \(error!)")
+                return
             }
+            
+            // ensure there is data returned from this HTTP response
+            guard let content = data else {
+                print("No data")
+                return
+            }
+            
+            // serialise the data / NSData object into Dictionary [String : Any]
+            guard let json = (try? JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers)) as? [String] else {
+                print("Not containing JSON")
+                return
+            }
+            
+            print("gotten json response dictionary is \n \(json)")
         }
-        catch {
-            print(error)
-        }
+
+        // execute the HTTP request
+        task.resume()
     }
 }
