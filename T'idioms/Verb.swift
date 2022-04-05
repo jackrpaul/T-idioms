@@ -8,8 +8,7 @@
 import UIKit
 
 class Verb {
-    var wow : [String]
-    struct Verbs {
-        var verbList : [String]
+    func generateVerbs() -> [String] {
+        return ["speedier"]
     }
 }

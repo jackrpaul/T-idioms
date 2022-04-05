@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="This is where you will create a new T'Idiom" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjQ-he-pTY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Create a New T'idiom" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjQ-he-pTY">
                                 <rect key="frame" x="45" y="94" width="324" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="Mms-qk-Wey"/>
@@ -105,7 +105,6 @@
                     <connections>
                         <segue destination="63b-eI-ShS" kind="relationship" relationship="viewControllers" id="Wip-ZN-uCj"/>
                         <segue destination="ldh-O1-9YS" kind="relationship" relationship="viewControllers" id="kkI-73-ZWz"/>
-                        <segue destination="Apz-Q6-uU6" kind="relationship" relationship="viewControllers" id="cEs-ph-STu"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="taQ-rn-BAq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -204,45 +203,10 @@
             </objects>
             <point key="canvasLocation" x="1977" y="410"/>
         </scene>
-        <!--Settings-->
-        <scene sceneID="qFe-wr-Rt8">
-            <objects>
-                <viewController title="Settings" id="Apz-Q6-uU6" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="p4A-Rl-zaq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is where users can change settings for creating T'idioms" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="st8-Wd-Z6J">
-                                <rect key="frame" x="45" y="94" width="324" height="92"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" title="oh yeah" translatesAutoresizingMaskIntoConstraints="NO" id="Wep-ME-0aE">
-                                <rect key="frame" x="184" y="351" width="48" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="vd8-LF-3GW"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="st8-Wd-Z6J" firstAttribute="leading" secondItem="p4A-Rl-zaq" secondAttribute="leadingMargin" constant="25" id="BoO-IG-9yj"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="st8-Wd-Z6J" secondAttribute="trailing" constant="25" id="tY3-Kz-0WL"/>
-                            <constraint firstItem="st8-Wd-Z6J" firstAttribute="top" secondItem="vd8-LF-3GW" secondAttribute="top" constant="50" id="xKV-ax-jFF"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape.circle" catalog="system" selectedImage="gearshape.circle.fill" id="9C0-Nc-O3j"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aKk-aj-4SH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1976.8115942028987" y="1073.4375"/>
-        </scene>
     </scenes>
     <resources>
         <image name="books.vertical" catalog="system" width="128" height="107"/>
         <image name="books.vertical.fill" catalog="system" width="128" height="109"/>
-        <image name="gearshape.circle" catalog="system" width="128" height="121"/>
-        <image name="gearshape.circle.fill" catalog="system" width="128" height="121"/>
         <image name="plus.rectangle.on.folder" catalog="system" width="128" height="96"/>
         <image name="plus.rectangle.on.folder.fill" catalog="system" width="128" height="96"/>
         <systemColor name="systemBackgroundColor">
