@@ -8,17 +8,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var createdTidiom: UILabel!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        createdTidiom.text = ""
-    }
+    
+    var myTidioms: [String] = []
     
     let verbs = Verb().generateVerbs()
     let adjs = Adj().generateAdjs()
     let nouns = Noun().generateNouns()
     let nounAdjs = Noun().generateNounAdjs()
+
+    @IBOutlet weak var createdTidiom: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        createdTidiom.text = ""
+    }
     
     @IBAction func createTidiom(_ sender: Any) {
         //NetworkManager().fetchWords()
@@ -30,11 +33,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func saveTidiom(_ sender: Any) {
-        SavedController().myTidioms.append(createdTidiom.text!)
-        
-        saveToUserDefaults();
-        
-        SavedController().savedTableView.reloadData()
+        myTidioms.append(createdTidiom.text!)
+        print(createdTidiom.text!)
+        print(myTidioms)
+        saveToUserDefaults()
     }
     
     
@@ -54,9 +56,10 @@ class ViewController: UIViewController {
     
     func saveToUserDefaults() {
         let encoder = JSONEncoder()
-        if let data = try? encoder.encode(SavedController().myTidioms) {
-            UserDefaults.standard.set(data, forKey: "savedMyComicBooks")
+        if let data = try? encoder.encode(myTidioms) {
+            UserDefaults.standard.set(data, forKey: "savedTidioms")
         }
+        print("saved")
     }
     
 /**
