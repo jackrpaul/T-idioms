@@ -43,6 +43,15 @@ class ViewController: UIViewController {
         saveToUserDefaults()
     }
     
+    @IBAction func shareTidiom(_ sender: Any) {
+        let text = createdTidiom.text!
+        
+        let sharedText = [ text ]
+        let activityViewController = UIActivityViewController(activityItems: sharedText, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        
+        self.present(activityViewController, animated: true, completion: nil)
+    }
     
     func grabRandomWord(list: [String]) -> String {
         let word = list[Int.random(in: 0..<list.count)]
