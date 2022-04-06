@@ -7,18 +7,25 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+struct Tidiom : Codable {
+    var title : String
+}
 
-    @IBOutlet weak var createdTidiom: UILabel!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        createdTidiom.text = ""
-    }
+var myTidioms: [Tidiom] = []
+
+class ViewController: UIViewController {
     
     let verbs = Verb().generateVerbs()
     let adjs = Adj().generateAdjs()
     let nouns = Noun().generateNouns()
     let nounAdjs = Noun().generateNounAdjs()
+
+    @IBOutlet weak var createdTidiom: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        createdTidiom.text = ""
+    }
     
     @IBAction func createTidiom(_ sender: Any) {
         //NetworkManager().fetchWords()
@@ -28,6 +35,14 @@ class ViewController: UIViewController {
         createdTidiom.text = phrase
         UIView.animate(withDuration: 1.0, animations: {self.createdTidiom.alpha = 1}, completion: {_ in })
     }
+    
+    @IBAction func saveTidiom(_ sender: Any) {
+        myTidioms.append(Tidiom(title: createdTidiom.text!))
+        print(createdTidiom.text!)
+        print(myTidioms)
+        saveToUserDefaults()
+    }
+    
     
     func grabRandomWord(list: [String]) -> String {
         let word = list[Int.random(in: 0..<list.count)]
@@ -41,6 +56,14 @@ class ViewController: UIViewController {
         tid.append(grabRandomWord(list: nounAdjs) + " ")
         tid.append(grabRandomWord(list: nouns))
         return tid
+    }
+    
+    func saveToUserDefaults() {
+        let encoder = JSONEncoder()
+        if let data = try? encoder.encode(myTidioms) {
+            UserDefaults.standard.set(data, forKey: "savedTidioms")
+        }
+        print("saved")
     }
     
 /**
