@@ -63,9 +63,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5u3-KQ-N9W">
-                                <rect key="frame" x="35" y="712" width="120" height="67"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNu-m5-VvX">
+                                <rect key="frame" x="249" y="712" width="120" height="67"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="JAr-bw-6V9"/>
+                                    <constraint firstAttribute="height" constant="67" id="czi-Un-kAA"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Share"/>
+                                <connections>
+                                    <action selector="shareTidiom:" destination="63b-eI-ShS" eventType="touchUpInside" id="MfT-Lh-jN7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5u3-KQ-N9W">
+                                <rect key="frame" x="45" y="712" width="120" height="67"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="6wh-vK-js9"/>
+                                    <constraint firstAttribute="width" constant="120" id="Gp8-jG-kQ3"/>
+                                    <constraint firstAttribute="height" constant="67" id="ezs-VL-pDT"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save"/>
@@ -79,21 +98,21 @@
                         <constraints>
                             <constraint firstItem="gbc-1f-SF1" firstAttribute="leading" secondItem="iVD-Bs-Vwd" secondAttribute="leading" constant="45" id="3RG-m2-VDJ"/>
                             <constraint firstItem="DN5-iw-Glm" firstAttribute="leading" secondItem="PjQ-he-pTY" secondAttribute="leading" id="4Qj-7a-Y7a"/>
-                            <constraint firstItem="5u3-KQ-N9W" firstAttribute="top" secondItem="gbc-1f-SF1" secondAttribute="bottom" constant="49" id="7uM-BN-5Th"/>
                             <constraint firstItem="DN5-iw-Glm" firstAttribute="top" secondItem="HYD-fB-tec" secondAttribute="bottom" constant="30" id="8te-VH-4uu"/>
                             <constraint firstItem="PjQ-he-pTY" firstAttribute="top" secondItem="iVD-Bs-Vwd" secondAttribute="top" constant="50" id="IZh-Tf-vm4"/>
                             <constraint firstItem="HYD-fB-tec" firstAttribute="leading" secondItem="iVD-Bs-Vwd" secondAttribute="leading" constant="35" id="Ixw-8p-ZDx"/>
                             <constraint firstItem="DN5-iw-Glm" firstAttribute="trailing" secondItem="PjQ-he-pTY" secondAttribute="trailing" id="JuA-S6-Kqb"/>
                             <constraint firstItem="iVD-Bs-Vwd" firstAttribute="trailing" secondItem="gbc-1f-SF1" secondAttribute="trailing" constant="45" id="MNd-La-u4L"/>
                             <constraint firstItem="PjQ-he-pTY" firstAttribute="leading" secondItem="iVD-Bs-Vwd" secondAttribute="leading" constant="45" id="N5e-jc-7NI"/>
-                            <constraint firstItem="iVD-Bs-Vwd" firstAttribute="bottom" secondItem="5u3-KQ-N9W" secondAttribute="bottom" constant="34" id="SlP-rb-tKO"/>
+                            <constraint firstItem="LNu-m5-VvX" firstAttribute="leading" secondItem="5u3-KQ-N9W" secondAttribute="trailing" constant="84" id="OtB-Ss-a37"/>
                             <constraint firstItem="HYD-fB-tec" firstAttribute="top" secondItem="PjQ-he-pTY" secondAttribute="bottom" constant="10" id="ThB-OS-Crr"/>
+                            <constraint firstItem="5u3-KQ-N9W" firstAttribute="baseline" secondItem="LNu-m5-VvX" secondAttribute="baseline" id="d9e-19-p49"/>
                             <constraint firstItem="gbc-1f-SF1" firstAttribute="top" secondItem="DN5-iw-Glm" secondAttribute="bottom" constant="25" id="jRj-Db-CCx"/>
                             <constraint firstItem="iVD-Bs-Vwd" firstAttribute="trailing" secondItem="PjQ-he-pTY" secondAttribute="trailing" constant="45" id="ldr-XQ-6TU"/>
+                            <constraint firstItem="5u3-KQ-N9W" firstAttribute="top" secondItem="gbc-1f-SF1" secondAttribute="bottom" constant="49" id="m1X-po-2TU"/>
                             <constraint firstItem="iVD-Bs-Vwd" firstAttribute="trailing" secondItem="HYD-fB-tec" secondAttribute="trailing" constant="35" id="o0i-kU-CBJ"/>
                             <constraint firstItem="iVD-Bs-Vwd" firstAttribute="bottom" secondItem="gbc-1f-SF1" secondAttribute="bottom" constant="150" id="qbZ-OG-guc"/>
-                            <constraint firstItem="iVD-Bs-Vwd" firstAttribute="trailing" secondItem="5u3-KQ-N9W" secondAttribute="trailing" constant="259" id="sKu-YX-Mvf"/>
-                            <constraint firstItem="5u3-KQ-N9W" firstAttribute="leading" secondItem="HYD-fB-tec" secondAttribute="leading" id="vMH-hV-QKj"/>
+                            <constraint firstItem="5u3-KQ-N9W" firstAttribute="leading" secondItem="gbc-1f-SF1" secondAttribute="leading" id="sR7-cb-Yob"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Create" selectedImage="plus.rectangle.on.folder.fill" catalog="system" id="pG3-Ha-wvS">
