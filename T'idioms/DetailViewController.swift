@@ -10,10 +10,11 @@ import UIKit
 class DetailViewController: UIViewController {
     
     @IBOutlet weak var tidiom: UILabel!
+    var dvTitle = "testing"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tidiom.text = ""
+        tidiom.text = dvTitle
     }
     
 }

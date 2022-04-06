@@ -164,7 +164,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="8Ad-ei-YEl" kind="show" id="20K-uD-sPa"/>
+                                    <segue destination="8Ad-ei-YEl" kind="show" identifier="goToDetailView" id="20K-uD-sPa"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -197,9 +197,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T'idiom Text" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEL-km-Ppi">
-                                <rect key="frame" x="96" y="438" width="222" height="26"/>
+                                <rect key="frame" x="96" y="385" width="222" height="126"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="26" id="MlA-Pe-MYn"/>
+                                    <constraint firstAttribute="height" constant="126" id="A2y-Uy-bGV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
@@ -209,7 +209,7 @@
                                 <rect key="frame" x="96" y="731" width="222" height="47"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="47" id="E9J-my-8fr"/>
+                                    <constraint firstAttribute="height" constant="47" id="ww2-Qh-yNp"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -219,15 +219,15 @@
                         <viewLayoutGuide key="safeArea" id="Wg1-Dk-umN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Wg1-Dk-umN" firstAttribute="trailing" secondItem="yVg-cy-RWW" secondAttribute="trailing" constant="25" id="2b0-iq-WNp"/>
-                            <constraint firstItem="sEL-km-Ppi" firstAttribute="leading" secondItem="Wg1-Dk-umN" secondAttribute="leading" constant="96" id="6CR-dF-iWH"/>
-                            <constraint firstItem="sEL-km-Ppi" firstAttribute="top" secondItem="RgB-Oc-1Z6" secondAttribute="top" constant="438" id="Mv2-Nr-7xY"/>
-                            <constraint firstItem="sEL-km-Ppi" firstAttribute="trailing" secondItem="N9L-23-TiZ" secondAttribute="trailing" id="WSV-2D-Nqk"/>
-                            <constraint firstItem="Wg1-Dk-umN" firstAttribute="bottom" secondItem="N9L-23-TiZ" secondAttribute="bottom" constant="35" id="aXq-90-3sd"/>
-                            <constraint firstItem="yVg-cy-RWW" firstAttribute="leading" secondItem="Wg1-Dk-umN" secondAttribute="leading" constant="25" id="b1I-FH-C4y"/>
-                            <constraint firstItem="sEL-km-Ppi" firstAttribute="leading" secondItem="N9L-23-TiZ" secondAttribute="leading" id="iov-aI-jN3"/>
-                            <constraint firstItem="sEL-km-Ppi" firstAttribute="centerX" secondItem="yVg-cy-RWW" secondAttribute="centerX" id="k61-8v-x0a"/>
-                            <constraint firstItem="yVg-cy-RWW" firstAttribute="top" secondItem="Wg1-Dk-umN" secondAttribute="top" constant="50" id="lwM-hn-OB0"/>
+                            <constraint firstItem="yVg-cy-RWW" firstAttribute="leading" secondItem="Wg1-Dk-umN" secondAttribute="leading" constant="25" id="43p-7K-OdM"/>
+                            <constraint firstItem="yVg-cy-RWW" firstAttribute="centerX" secondItem="sEL-km-Ppi" secondAttribute="centerX" id="DGL-q9-oan"/>
+                            <constraint firstItem="Wg1-Dk-umN" firstAttribute="bottom" secondItem="N9L-23-TiZ" secondAttribute="bottom" constant="35" id="H8z-7L-DEu"/>
+                            <constraint firstItem="sEL-km-Ppi" firstAttribute="leading" secondItem="N9L-23-TiZ" secondAttribute="leading" id="IR5-eG-vGO"/>
+                            <constraint firstItem="sEL-km-Ppi" firstAttribute="trailing" secondItem="N9L-23-TiZ" secondAttribute="trailing" id="QR2-4N-nqG"/>
+                            <constraint firstItem="yVg-cy-RWW" firstAttribute="top" secondItem="Wg1-Dk-umN" secondAttribute="top" constant="50" id="UBU-Wz-IMV"/>
+                            <constraint firstItem="sEL-km-Ppi" firstAttribute="leading" secondItem="Wg1-Dk-umN" secondAttribute="leading" constant="96" id="W42-b3-Btl"/>
+                            <constraint firstItem="yVg-cy-RWW" firstAttribute="centerX" secondItem="RgB-Oc-1Z6" secondAttribute="centerX" id="kmf-uP-uRE"/>
+                            <constraint firstItem="sEL-km-Ppi" firstAttribute="centerY" secondItem="RgB-Oc-1Z6" secondAttribute="centerY" id="tHY-Mg-TKi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6Op-cj-gye">

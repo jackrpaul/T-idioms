@@ -18,7 +18,6 @@ class SavedController: UIViewController, UITableViewDataSource, UITableViewDeleg
         
         if UserDefaults.standard.object(forKey: "savedTidioms") != nil {
             myTidioms = try! JSONDecoder().decode([Tidiom].self, from: UserDefaults.standard.object(forKey: "savedTidioms") as! Data)
-            print("decoding userdefaults")
         } else {
             ViewController().saveToUserDefaults()
         }
@@ -36,9 +35,11 @@ class SavedController: UIViewController, UITableViewDataSource, UITableViewDeleg
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToDetailedView" {
+        if segue.identifier == "goToDetailView" {
             let destination = segue.destination as? DetailViewController
             let tidIndex = savedTableView.indexPathForSelectedRow!.row
+            
+            destination?.dvTitle = myTidioms[tidIndex].title
         }
     }
     
