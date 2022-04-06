@@ -30,7 +30,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func saveTidiom(_ sender: Any) {
+        SavedController().myTidioms.append(createdTidiom.text!)
         
+        saveToUserDefaults();
+        
+        SavedController().savedTableView.reloadData()
     }
     
     
@@ -46,6 +50,13 @@ class ViewController: UIViewController {
         tid.append(grabRandomWord(list: nounAdjs) + " ")
         tid.append(grabRandomWord(list: nouns))
         return tid
+    }
+    
+    func saveToUserDefaults() {
+        let encoder = JSONEncoder()
+        if let data = try? encoder.encode(SavedController().myTidioms) {
+            UserDefaults.standard.set(data, forKey: "savedMyComicBooks")
+        }
     }
     
 /**
