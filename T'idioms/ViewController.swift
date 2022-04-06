@@ -29,6 +29,11 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 1.0, animations: {self.createdTidiom.alpha = 1}, completion: {_ in })
     }
     
+    @IBAction func saveTidiom(_ sender: Any) {
+        
+    }
+    
+    
     func grabRandomWord(list: [String]) -> String {
         let word = list[Int.random(in: 0..<list.count)]
         return word
