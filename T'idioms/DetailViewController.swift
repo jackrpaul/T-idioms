@@ -9,8 +9,11 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    @IBOutlet weak var tidiom: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tidiom.text = ""
     }
     
 }

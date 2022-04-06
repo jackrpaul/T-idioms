@@ -185,27 +185,57 @@
         <!--DetailView-->
         <scene sceneID="utd-Bm-etj">
             <objects>
-                <viewController title="DetailView" id="8Ad-ei-YEl" sceneMemberID="viewController">
+                <viewController title="DetailView" id="8Ad-ei-YEl" customClass="DetailViewController" customModule="T_idioms" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RgB-Oc-1Z6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is where you can view/share saved T'idioms" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVg-cy-RWW">
-                                <rect key="frame" x="25" y="138" width="364" height="61"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saved T'idiom" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVg-cy-RWW">
+                                <rect key="frame" x="25" y="138" width="364" height="38.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T'idiom Text" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEL-km-Ppi">
+                                <rect key="frame" x="96" y="438" width="222" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="MlA-Pe-MYn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9L-23-TiZ">
+                                <rect key="frame" x="96" y="731" width="222" height="47"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="E9J-my-8fr"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Share"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Wg1-Dk-umN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Wg1-Dk-umN" firstAttribute="trailing" secondItem="yVg-cy-RWW" secondAttribute="trailing" constant="25" id="2b0-iq-WNp"/>
+                            <constraint firstItem="sEL-km-Ppi" firstAttribute="leading" secondItem="Wg1-Dk-umN" secondAttribute="leading" constant="96" id="6CR-dF-iWH"/>
+                            <constraint firstItem="sEL-km-Ppi" firstAttribute="top" secondItem="RgB-Oc-1Z6" secondAttribute="top" constant="438" id="Mv2-Nr-7xY"/>
+                            <constraint firstItem="sEL-km-Ppi" firstAttribute="trailing" secondItem="N9L-23-TiZ" secondAttribute="trailing" id="WSV-2D-Nqk"/>
+                            <constraint firstItem="Wg1-Dk-umN" firstAttribute="bottom" secondItem="N9L-23-TiZ" secondAttribute="bottom" constant="35" id="aXq-90-3sd"/>
                             <constraint firstItem="yVg-cy-RWW" firstAttribute="leading" secondItem="Wg1-Dk-umN" secondAttribute="leading" constant="25" id="b1I-FH-C4y"/>
+                            <constraint firstItem="sEL-km-Ppi" firstAttribute="leading" secondItem="N9L-23-TiZ" secondAttribute="leading" id="iov-aI-jN3"/>
+                            <constraint firstItem="sEL-km-Ppi" firstAttribute="centerX" secondItem="yVg-cy-RWW" secondAttribute="centerX" id="k61-8v-x0a"/>
                             <constraint firstItem="yVg-cy-RWW" firstAttribute="top" secondItem="Wg1-Dk-umN" secondAttribute="top" constant="50" id="lwM-hn-OB0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Tidiom" id="6Op-cj-gye"/>
+                    <navigationItem key="navigationItem" id="6Op-cj-gye">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="nOh-VB-as9"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tidiom" destination="sEL-km-Ppi" id="7ej-6N-9Pf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SCD-Vp-7hF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

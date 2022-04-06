@@ -38,8 +38,6 @@ class ViewController: UIViewController {
     
     @IBAction func saveTidiom(_ sender: Any) {
         myTidioms.append(Tidiom(title: createdTidiom.text!))
-        print(createdTidiom.text!)
-        print(myTidioms)
         saveToUserDefaults()
     }
     
@@ -72,7 +70,6 @@ class ViewController: UIViewController {
         if let data = try? encoder.encode(myTidioms) {
             UserDefaults.standard.set(data, forKey: "savedTidioms")
         }
-        print("saved")
     }
     
 /**
