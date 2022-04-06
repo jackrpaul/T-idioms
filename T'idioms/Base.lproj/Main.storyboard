@@ -20,7 +20,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Create a New T'idiom" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjQ-he-pTY">
                                 <rect key="frame" x="45" y="94" width="324" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="Mms-qk-Wey"/>
+                                    <constraint firstAttribute="height" constant="75" id="Kuf-Kt-feO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
@@ -28,9 +28,9 @@
                                 <size key="shadowOffset" width="0.0" height="7"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DN5-iw-Glm">
-                                <rect key="frame" x="45" y="488" width="324" height="50"/>
+                                <rect key="frame" x="45" y="340" width="324" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="GdM-Bz-xcG"/>
+                                    <constraint firstAttribute="height" constant="50" id="lNu-co-DOK"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Create">
@@ -45,31 +45,18 @@
                                     <action selector="createTidiom:" destination="63b-eI-ShS" eventType="touchUpInside" id="XaB-fD-NjE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="&quot;tougher than a texas rattlesnake there partner&quot;" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYD-fB-tec">
-                                <rect key="frame" x="35" y="179" width="344" height="279"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" priority="750" constant="60" id="eXb-go-II2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save/Share" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbc-1f-SF1">
-                                <rect key="frame" x="45" y="563" width="324" height="100"/>
+                                <rect key="frame" x="45" y="494" width="324" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="rJC-pH-Q3w"/>
+                                    <constraint firstAttribute="height" constant="48" id="I6G-RA-YvY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNu-m5-VvX">
-                                <rect key="frame" x="249" y="712" width="120" height="67"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNu-m5-VvX">
+                                <rect key="frame" x="249" y="643" width="120" height="67"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="JAr-bw-6V9"/>
-                                    <constraint firstAttribute="height" constant="67" id="czi-Un-kAA"/>
-                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Share"/>
@@ -77,13 +64,11 @@
                                     <action selector="shareTidiom:" destination="63b-eI-ShS" eventType="touchUpInside" id="MfT-Lh-jN7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5u3-KQ-N9W">
-                                <rect key="frame" x="45" y="712" width="120" height="67"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5u3-KQ-N9W">
+                                <rect key="frame" x="45" y="643" width="120" height="67"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="6wh-vK-js9"/>
-                                    <constraint firstAttribute="width" constant="120" id="Gp8-jG-kQ3"/>
-                                    <constraint firstAttribute="height" constant="67" id="ezs-VL-pDT"/>
+                                    <constraint firstAttribute="width" constant="120" id="hxE-x1-vJ6"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -92,27 +77,36 @@
                                     <action selector="saveTidiom:" destination="63b-eI-ShS" eventType="touchUpInside" id="bio-6H-vpR"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="&quot;tougher than a texas rattlesnake there partner&quot;" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYD-fB-tec">
+                                <rect key="frame" x="35" y="208" width="344" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ecW-UV-iFK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iVD-Bs-Vwd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="gbc-1f-SF1" firstAttribute="leading" secondItem="iVD-Bs-Vwd" secondAttribute="leading" constant="45" id="3RG-m2-VDJ"/>
-                            <constraint firstItem="DN5-iw-Glm" firstAttribute="leading" secondItem="PjQ-he-pTY" secondAttribute="leading" id="4Qj-7a-Y7a"/>
-                            <constraint firstItem="DN5-iw-Glm" firstAttribute="top" secondItem="HYD-fB-tec" secondAttribute="bottom" constant="30" id="8te-VH-4uu"/>
-                            <constraint firstItem="PjQ-he-pTY" firstAttribute="top" secondItem="iVD-Bs-Vwd" secondAttribute="top" constant="50" id="IZh-Tf-vm4"/>
-                            <constraint firstItem="HYD-fB-tec" firstAttribute="leading" secondItem="iVD-Bs-Vwd" secondAttribute="leading" constant="35" id="Ixw-8p-ZDx"/>
-                            <constraint firstItem="DN5-iw-Glm" firstAttribute="trailing" secondItem="PjQ-he-pTY" secondAttribute="trailing" id="JuA-S6-Kqb"/>
-                            <constraint firstItem="iVD-Bs-Vwd" firstAttribute="trailing" secondItem="gbc-1f-SF1" secondAttribute="trailing" constant="45" id="MNd-La-u4L"/>
-                            <constraint firstItem="PjQ-he-pTY" firstAttribute="leading" secondItem="iVD-Bs-Vwd" secondAttribute="leading" constant="45" id="N5e-jc-7NI"/>
-                            <constraint firstItem="LNu-m5-VvX" firstAttribute="leading" secondItem="5u3-KQ-N9W" secondAttribute="trailing" constant="84" id="OtB-Ss-a37"/>
-                            <constraint firstItem="HYD-fB-tec" firstAttribute="top" secondItem="PjQ-he-pTY" secondAttribute="bottom" constant="10" id="ThB-OS-Crr"/>
-                            <constraint firstItem="5u3-KQ-N9W" firstAttribute="baseline" secondItem="LNu-m5-VvX" secondAttribute="baseline" id="d9e-19-p49"/>
-                            <constraint firstItem="gbc-1f-SF1" firstAttribute="top" secondItem="DN5-iw-Glm" secondAttribute="bottom" constant="25" id="jRj-Db-CCx"/>
-                            <constraint firstItem="iVD-Bs-Vwd" firstAttribute="trailing" secondItem="PjQ-he-pTY" secondAttribute="trailing" constant="45" id="ldr-XQ-6TU"/>
-                            <constraint firstItem="5u3-KQ-N9W" firstAttribute="top" secondItem="gbc-1f-SF1" secondAttribute="bottom" constant="49" id="m1X-po-2TU"/>
-                            <constraint firstItem="iVD-Bs-Vwd" firstAttribute="trailing" secondItem="HYD-fB-tec" secondAttribute="trailing" constant="35" id="o0i-kU-CBJ"/>
-                            <constraint firstItem="iVD-Bs-Vwd" firstAttribute="bottom" secondItem="gbc-1f-SF1" secondAttribute="bottom" constant="150" id="qbZ-OG-guc"/>
-                            <constraint firstItem="5u3-KQ-N9W" firstAttribute="leading" secondItem="gbc-1f-SF1" secondAttribute="leading" id="sR7-cb-Yob"/>
+                            <constraint firstItem="PjQ-he-pTY" firstAttribute="leading" secondItem="iVD-Bs-Vwd" secondAttribute="leading" constant="45" id="5fv-5t-pTm"/>
+                            <constraint firstItem="iVD-Bs-Vwd" firstAttribute="bottom" secondItem="5u3-KQ-N9W" secondAttribute="bottom" constant="103" id="EWh-bU-abr"/>
+                            <constraint firstItem="LNu-m5-VvX" firstAttribute="leading" secondItem="5u3-KQ-N9W" secondAttribute="trailing" constant="84" id="L4r-xc-qT7"/>
+                            <constraint firstAttribute="bottom" secondItem="gbc-1f-SF1" secondAttribute="bottom" constant="354" id="NIi-QV-zUu"/>
+                            <constraint firstItem="5u3-KQ-N9W" firstAttribute="baseline" secondItem="LNu-m5-VvX" secondAttribute="baseline" id="RTE-K2-Kfu"/>
+                            <constraint firstItem="gbc-1f-SF1" firstAttribute="leading" secondItem="5u3-KQ-N9W" secondAttribute="leading" id="Tvz-VJ-f0v"/>
+                            <constraint firstItem="gbc-1f-SF1" firstAttribute="trailing" secondItem="LNu-m5-VvX" secondAttribute="trailing" id="Wb7-yU-BMQ"/>
+                            <constraint firstItem="DN5-iw-Glm" firstAttribute="trailing" secondItem="gbc-1f-SF1" secondAttribute="trailing" id="aFl-Ze-ITp"/>
+                            <constraint firstItem="PjQ-he-pTY" firstAttribute="trailing" secondItem="DN5-iw-Glm" secondAttribute="trailing" id="aea-qa-ZeT"/>
+                            <constraint firstItem="HYD-fB-tec" firstAttribute="top" secondItem="PjQ-he-pTY" secondAttribute="bottom" constant="39" id="enW-fE-gmA"/>
+                            <constraint firstItem="PjQ-he-pTY" firstAttribute="leading" secondItem="DN5-iw-Glm" secondAttribute="leading" id="gdZ-Zy-Fba"/>
+                            <constraint firstItem="HYD-fB-tec" firstAttribute="leading" secondItem="iVD-Bs-Vwd" secondAttribute="leading" constant="35" id="k38-RK-Uqf"/>
+                            <constraint firstItem="PjQ-he-pTY" firstAttribute="centerX" secondItem="HYD-fB-tec" secondAttribute="centerX" id="nx3-Xf-uLc"/>
+                            <constraint firstItem="DN5-iw-Glm" firstAttribute="leading" secondItem="gbc-1f-SF1" secondAttribute="leading" id="q1Y-7p-RIb"/>
+                            <constraint firstItem="PjQ-he-pTY" firstAttribute="centerX" secondItem="h7L-YV-sma" secondAttribute="centerX" id="u4L-PR-8nr"/>
+                            <constraint firstItem="PjQ-he-pTY" firstAttribute="top" secondItem="iVD-Bs-Vwd" secondAttribute="top" constant="50" id="zXM-oA-W9U"/>
+                            <constraint firstItem="DN5-iw-Glm" firstAttribute="top" secondItem="HYD-fB-tec" secondAttribute="bottom" constant="72" id="ziJ-tI-PRi"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Create" selectedImage="plus.rectangle.on.folder.fill" catalog="system" id="pG3-Ha-wvS">
