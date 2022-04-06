@@ -54,7 +54,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is where the user will be able to name/save T'idioms" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbc-1f-SF1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save/Share" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbc-1f-SF1">
                                 <rect key="frame" x="45" y="563" width="324" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="rJC-pH-Q3w"/>
@@ -178,7 +178,7 @@
                             <constraint firstItem="yVg-cy-RWW" firstAttribute="top" secondItem="Wg1-Dk-umN" secondAttribute="top" constant="50" id="lwM-hn-OB0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="6Op-cj-gye"/>
+                    <navigationItem key="navigationItem" title="Tidiom" id="6Op-cj-gye"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SCD-Vp-7hF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
