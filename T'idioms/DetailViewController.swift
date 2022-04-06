@@ -17,4 +17,14 @@ class DetailViewController: UIViewController {
         tidiom.text = dvTitle
     }
     
+    @IBAction func shareTidiom(_ sender: Any) {
+        let text = tidiom.text!
+        
+        let sharedText = [ text ]
+        let activityViewController = UIActivityViewController(activityItems: sharedText, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        
+        self.present(activityViewController, animated: true, completion: nil)
+    }
+    
 }
