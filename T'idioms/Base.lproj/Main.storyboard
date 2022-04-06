@@ -22,7 +22,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="Kuf-Kt-feO"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="7"/>
@@ -34,7 +34,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Create">
-                                    <backgroundConfiguration key="background">
+                                    <backgroundConfiguration key="background" cornerRadius="30">
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                         <color key="strokeColor" red="0.58431372550000005" green="0.92156862750000001" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
                                     </backgroundConfiguration>
@@ -59,7 +59,10 @@
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Share"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Share">
+                                    <backgroundConfiguration key="background" cornerRadius="20"/>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="shareTidiom:" destination="63b-eI-ShS" eventType="touchUpInside" id="MfT-Lh-jN7"/>
                                 </connections>
@@ -72,7 +75,10 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save">
+                                    <backgroundConfiguration key="background" cornerRadius="30"/>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="saveTidiom:" destination="63b-eI-ShS" eventType="touchUpInside" id="bio-6H-vpR"/>
                                 </connections>
@@ -88,7 +94,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iVD-Bs-Vwd"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.94117647059999998" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="PjQ-he-pTY" firstAttribute="leading" secondItem="iVD-Bs-Vwd" secondAttribute="leading" constant="45" id="5fv-5t-pTm"/>
                             <constraint firstItem="iVD-Bs-Vwd" firstAttribute="bottom" secondItem="5u3-KQ-N9W" secondAttribute="bottom" constant="103" id="EWh-bU-abr"/>
@@ -145,7 +151,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="dIj-YB-gTs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.94117647059999998" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="tidiom" rowHeight="90" id="j2f-hU-gfn">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="90"/>
@@ -213,14 +219,17 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Share"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Share">
+                                    <backgroundConfiguration key="background" cornerRadius="30"/>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="shareTidiom:" destination="8Ad-ei-YEl" eventType="touchUpInside" id="hui-fj-yzx"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Wg1-Dk-umN"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.94117647059999998" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="yVg-cy-RWW" firstAttribute="leading" secondItem="Wg1-Dk-umN" secondAttribute="leading" constant="25" id="43p-7K-OdM"/>
                             <constraint firstItem="yVg-cy-RWW" firstAttribute="centerX" secondItem="sEL-km-Ppi" secondAttribute="centerX" id="DGL-q9-oan"/>
