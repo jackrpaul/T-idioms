@@ -7,9 +7,13 @@
 
 import UIKit
 
+struct Tidiom : Codable {
+    var title : String
+}
+
+var myTidioms: [Tidiom] = []
+
 class ViewController: UIViewController {
-    
-    var myTidioms: [String] = []
     
     let verbs = Verb().generateVerbs()
     let adjs = Adj().generateAdjs()
@@ -33,7 +37,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func saveTidiom(_ sender: Any) {
-        myTidioms.append(createdTidiom.text!)
+        myTidioms.append(Tidiom(title: createdTidiom.text!))
         print(createdTidiom.text!)
         print(myTidioms)
         saveToUserDefaults()

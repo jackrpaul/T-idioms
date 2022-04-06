@@ -17,7 +17,7 @@ class SavedController: UIViewController, UITableViewDataSource, UITableViewDeleg
         savedTableView.delegate = self
         
         if UserDefaults.standard.object(forKey: "savedTidioms") != nil {
-            ViewController().myTidioms = try! JSONDecoder().decode([String].self, from: UserDefaults.standard.object(forKey: "savedTidioms") as! Data)
+            myTidioms = try! JSONDecoder().decode([Tidiom].self, from: UserDefaults.standard.object(forKey: "savedTidioms") as! Data)
             print("decoding userdefaults")
         } else {
             ViewController().saveToUserDefaults()
@@ -26,12 +26,12 @@ class SavedController: UIViewController, UITableViewDataSource, UITableViewDeleg
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ViewController().myTidioms.count
+        return myTidioms.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = savedTableView.dequeueReusableCell(withIdentifier: "tidiom")!
-        cell.textLabel?.text = ViewController().myTidioms[indexPath.row]
+        cell.textLabel?.text = myTidioms[indexPath.row].title
         return cell
     }
     
