@@ -122,7 +122,7 @@ class Verb {
             "tracin'",
             "trackin'",
             "travelin'",
-            "twitchin'",
+            "twitchin'"
         ]
     }
 }

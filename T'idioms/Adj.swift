@@ -39,7 +39,7 @@ class Adj {
             "sillier",
             "worse",
             "further",
-            "better",
+            "better"
         ]
     }
 }
